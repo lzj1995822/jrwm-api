@@ -6,6 +6,10 @@ import com.zkf.mysql.entity.*;
 import com.zkf.mysql.repository.*;
 import com.zkf.pojo.JrOrganizationResponseDTO;
 import com.zkf.pojo.JrOrganizationResquestDTO;
+
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -48,6 +52,8 @@ public class JrCenterController {
     @Resource
     private JrTownRoomRepo jrTownRoomRepo;
 
+    @ApiOperation(value="创建用户", notes="根据User对象创建用户")
+    @ApiImplicitParam(name = "user", value = "用户详细实体user", required = true, dataType = "User")
     @PostMapping("/addCenter")
     @ResponseBody
     public VResult<?> addCenter(@RequestBody JrCenter jrCenter, HttpServletRequest request) {
