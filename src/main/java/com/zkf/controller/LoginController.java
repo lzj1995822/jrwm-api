@@ -178,6 +178,7 @@ public class LoginController {
 
 	@RequestMapping("/userManege")
 	public String getHp() {
+		
 		return "userManage/userManage";
 	}
 
