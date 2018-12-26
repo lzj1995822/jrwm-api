@@ -1,0 +1,17 @@
+body,div,ul,li,a{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a:link,a:hover,a:visited{
+    text-decoration: none;
+}
+html,body{
+    width:100%;
+    font-size: 62.5%;
+}
+.page-container{
+    width: 100%;
+}
+.header{}

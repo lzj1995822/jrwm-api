@@ -1,0 +1,8 @@
+*.prefs
+*.classpath
+*MANIFEST.MF
+*.project
+target*
+.idea/
+*.iml
+*.log
